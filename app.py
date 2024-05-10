@@ -11,6 +11,8 @@ utils.save_boolean_matrix(bool_matrix, "assets/result")
 # Create the Plotly Dash app
 app = Dash(__name__)
 
+server = app.server
+
 # Define the layout of the app
 app.layout = html.Div([
     html.H1("Instrument Classification Results", style={'text-align': 'center'}),
